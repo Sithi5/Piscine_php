@@ -1,0 +1,55 @@
+body 
+{
+    background-color: rgb(83, 80, 80);
+}
+.oeil
+{
+    height: 170;
+    width: 200;
+}
+.cluster
+{
+    height: 570;
+    width: 1200;
+    display: block;
+    border-radius: 15px;
+    box-shadow: 10px 10px 12px black;
+    margin-left: auto;
+    margin-right: auto;
+}
+.crop 
+{
+    display: block;
+    border-radius: 15px;
+    box-shadow: 10px 10px 12px black;
+    width: 500px;
+    height: 200px;
+    overflow: hidden;
+}
+.crop img 
+{
+
+    width: 500000px;
+    height: 500000px;
+    margin: -75px 0 0 -100px;
+}
+.day_of_the_42
+{
+    display: block;
+    border-radius: 15px;
+    box-shadow: 10px 10px 12px black;
+    margin-left: auto;
+    margin-right: auto;
+    height: 120;
+    width: 500;
+}
+.towel
+{
+    height: 170;
+    width: 200;
+}
+.chat-icon
+{
+    height: 170;
+    width: 200;
+}
