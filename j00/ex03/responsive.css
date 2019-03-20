@@ -1,0 +1,173 @@
+body 
+{
+	background-color: rgba(99, 100, 100, 0.507);
+}
+			caption
+			{
+				font-size: 5vw;
+				color: blue;
+				border: 0.2vw solid black;
+				text-decoration: underline;
+				font-family: fantasy;
+			}
+			.imgeinstein
+			{
+				border: 1px solid black;
+				height: 13vw;
+				width: 15vw;
+			}
+			.imgelems
+			{
+				border: 0.1vw solid black;
+			}
+			.poids
+			{
+				font-size: 0.5vw;
+				text-align: right;
+			}
+			.symbole
+			{
+				text-align: center;
+				color: black;
+				font-size: 3vw;
+			}
+			.number
+			{
+				text-align: left;
+				font-size: 0.5vw;
+			}
+			.poidsblue
+			{
+				font-size: 0.5vw;
+				color: blue;
+				text-align: right;
+			}
+			.symboleblue
+			{
+				text-align: center;
+				color: blue;
+				font-size: 3vw;
+			}
+			.numberblue
+			{
+				text-align: left;
+				color: blue;
+				font-size: 0.5vw;
+			}
+			.poidsred
+			{
+				font-size: 0.5vw;
+				color: red;
+				text-align: right;
+			}
+			.symbolered
+			{
+				text-align: center;
+				color: red;
+				font-size: 3vw;
+			}
+			.numberred
+			{
+				text-align: left;
+				color: red;
+				font-size: 0.5vw;
+			}
+			.Lanthanides
+			{
+				text-align: center;
+				padding-top: 1vh;
+				font-size: 1.5vw;
+			}
+			.block
+			{
+				border: 0.1vw solid black;
+				width: 1vw;
+				height: 1vh;
+			}
+			.palevioletetred
+			{
+				border: 1px solid black;
+				width: 0.5vw;
+				height: 0.5vh;
+				background-image: linear-gradient(white, palevioletred);
+			}
+			.paleturquoise
+			{
+				border: 0.1vw solid black;
+				width: 0.5vw;
+				height: 0.5vh;
+				background-image: linear-gradient(white, paleturquoise);
+			}
+			.lightblue
+			{
+				border: 0.1vw solid black;
+				width: 0.5vw;
+				height: 0.5vh;
+				background-image: linear-gradient(white, lightblue);
+			}
+			.lightpink
+			{
+				border: 0.1vw solid black;
+				width: 0.5vw;
+				height: 0.5vh;
+				background-image: linear-gradient(white, lightpink);
+			}
+			.lightsteelblue
+			{
+				border: 0.1vw solid black;
+				width: 0.5vw;
+				height: 0.5vh;
+				background-image: linear-gradient(white, lightsteelblue);
+			}
+			.lightgreen
+			{
+				border: 0.1vw solid black;
+				width: 0.5vw;
+				height: 0.5vh;
+				background-image: linear-gradient(white, lightgreen);
+			}
+			.lightyellow
+			{
+				border: 0.1vw solid black;
+				width: 0.5vw;
+				height: 0.5vh;
+				background-image: linear-gradient(white, lightyellow);
+			}
+			.lightsalmon
+			{
+				border: 0.1vw solid black;
+				width: 0.5vw;
+				height: 0.5vh;
+				background-image: linear-gradient(white, lightsalmon);
+			}
+			.lightgrey
+			{
+				border: 0.1vw solid black;
+				width: 0.5vw;
+				height: 0.5vh;
+				background-image: linear-gradient(white, lightgrey);
+			}
+			.lightseagreen
+			{
+				border: 0.1vw solid black;
+				width: 0.5vw;
+				height: 0.5vh;
+				background-image: linear-gradient(white, lightseagreen);
+			}
+			.lightcoral
+			{
+				border: 0.1vw solid black;
+				width: 0.5vw;
+				height: 0.5vh;
+				background-image: linear-gradient(white, lightcoral);
+			}
+			.blockempti
+			{
+				width: 0.5vw;
+				height: 0.5vh;
+			}
+			table
+			{
+				width: 100%;
+				border-spacing: 0.3vw 0.2vh;
+			}

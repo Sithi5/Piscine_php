@@ -1,55 +1,89 @@
 body 
 {
-    background-color: rgb(83, 80, 80);
+    background-color: 505050;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.top, .bottom, .right, .center, .left
+{
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgb(5, 5, 5);
+    background-color: 909090;
+}
+
+.leftimage
+{
+        display:block;
+        width:50%;
+        margin-top: 10%;
+        margin-left:auto;
+        margin-right:auto;
 }
 .oeil
 {
-    height: 170;
-    width: 200;
+        display:block;
+        width:50%;
+        margin-top: 10%;
+        margin-left:auto;
+        margin-right:auto;
+        border: 4px solid red;
+        border-radius: 3px;
 }
-.cluster
+
+.center
 {
-    height: 570;
-    width: 1200;
-    display: block;
-    border-radius: 15px;
-    box-shadow: 10px 10px 12px black;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0%;
+    margin-top: 0%;
+    height: 345px;
+    width:  1200px;
 }
-.crop 
+
+.top
 {
-    display: block;
-    border-radius: 15px;
-    box-shadow: 10px 10px 12px black;
-    width: 500px;
-    height: 200px;
-    overflow: hidden;
+    height: auto;
 }
-.crop img 
+
+.left
+{
+    padding-top: 10px;
+    margin-left: 27px;
+    text-align: center;
+    width: 125px;
+    height: 390px;
+}
+
+.dayofthe42
+{
+    padding-left: 1.5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    height: 85px;
+    width: 350px;
+}
+
+.loupe
+{
+    position: relative;
+    padding-top: 1.4%;
+    padding-left: 33%;
+    height: 100px;
+    width: 200px;
+}
+.reload
+{
+    float: right;
+    margin-top: 5px;
+    margin-right: 5px;
+    height: 17px;
+    width: 17px;
+}
+.close
 {
 
-    width: 500000px;
-    height: 500000px;
-    margin: -75px 0 0 -100px;
-}
-.day_of_the_42
-{
-    display: block;
-    border-radius: 15px;
-    box-shadow: 10px 10px 12px black;
-    margin-left: auto;
-    margin-right: auto;
-    height: 120;
-    width: 500;
-}
-.towel
-{
-    height: 170;
-    width: 200;
-}
-.chat-icon
-{
-    height: 170;
-    width: 200;
+    float: right;
+    margin-top: 90px;
+    margin-left: 100px;
+    height: 17px;
+    width: 17px;
 }
