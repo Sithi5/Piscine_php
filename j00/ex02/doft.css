@@ -7,9 +7,57 @@ body
 
 .top, .bottom, .right, .center, .left
 {
-    border-radius: 10px;
-    box-shadow: 10px 10px 10px rgb(5, 5, 5);
+    border-radius: 1vw;
+    box-shadow: 0.7vw 0.7vw 0.7vw rgb(5, 5, 5);
     background-color: 909090;
+}
+
+
+
+.top
+{
+    margin-top: 1vw;
+    height: 8vw;
+}
+
+#loupe
+{
+    width:20%;
+    margin-top: 0.5%;
+    float:right;
+}
+
+.reload
+{
+    float: right;
+    margin-top: 0.5%;
+    margin-right: 0.5%;
+    margin-left: -1.5%;
+    width: 1.5%;
+}
+.close
+{
+    float: right;
+    margin-top: 8%;
+    width: 1.5%;
+}
+
+.dayofthe42
+{
+    float: left;
+	width: 30%;
+    margin-top: 1%;
+	margin-left: 1%;
+}
+
+.left
+{
+    padding-top: 1%;
+    margin-left: 3%;
+    float: left;
+    text-align: center;
+    width: 10%;
+    height: 53%;
 }
 
 .leftimage
@@ -20,6 +68,7 @@ body
         margin-left:auto;
         margin-right:auto;
 }
+
 .oeil
 {
         display:block;
@@ -33,57 +82,8 @@ body
 
 .center
 {
-    margin-left: 0%;
-    margin-top: 0%;
-    height: 345px;
-    width:  1200px;
-}
-
-.top
-{
-    height: auto;
-}
-
-.left
-{
-    padding-top: 10px;
-    margin-left: 27px;
-    text-align: center;
-    width: 125px;
-    height: 390px;
-}
-
-.dayofthe42
-{
-    padding-left: 1.5%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    height: 85px;
-    width: 350px;
-}
-
-.loupe
-{
-    position: relative;
-    padding-top: 1.4%;
-    padding-left: 33%;
-    height: 100px;
-    width: 200px;
-}
-.reload
-{
-    float: right;
-    margin-top: 5px;
-    margin-right: 5px;
-    height: 17px;
-    width: 17px;
-}
-.close
-{
-
-    float: right;
-    margin-top: 90px;
-    margin-left: 100px;
-    height: 17px;
-    width: 17px;
+    position: absolute;
+    width: 53%;
+    display: inline-block;
+    margin-left: 1.75%;
 }
