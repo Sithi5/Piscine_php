@@ -5,14 +5,12 @@ body
     margin-right: 10%;
 }
 
-.top, .bottom, .right, .center, .left
+.top, .right, .center, .left
 {
     border-radius: 1vw;
     box-shadow: 0.7vw 0.7vw 0.7vw rgb(5, 5, 5);
     background-color: 909090;
 }
-
-
 
 .top
 {
@@ -52,12 +50,11 @@ body
 
 .left
 {
-    padding-top: 1%;
     margin-left: 3%;
     float: left;
     text-align: center;
     width: 10%;
-    height: 53%;
+    padding-bottom: 3%;
 }
 
 .leftimage
@@ -83,7 +80,57 @@ body
 .center
 {
     position: absolute;
-    width: 53%;
+    width: 56.5%;
     display: inline-block;
     margin-left: 1.75%;
+}
+
+#cluster
+{
+    position: relative;
+    width:98%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.right
+{
+    position: absolute;
+    margin-left: 60%;
+    margin-right: 3%;
+    display: inline-block;
+    width: 8%;
+    padding-bottom: 3%;
+}
+
+.rightimage
+{
+        display:block;
+        width:50%;
+        margin-top: 10%;
+        margin-left:auto;
+        margin-right:auto;
+}
+
+.brick
+{
+    display: block;
+    background-image: url("resources/brick.jpg");
+    background-size: 100%;
+    height:100%;
+    width:100%;
+}
+
+.bottom
+{
+    border-radius: 1vw;
+    box-shadow: 0.7vw 0.7vw 0.7vw rgb(5, 5, 5);
+    background-color: #88ff89;
+    position: relative;
+    margin-top:35%;
+    margin-left:0%;
+    height:24%;
+    width:36%;
 }
