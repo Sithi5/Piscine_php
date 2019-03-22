@@ -25,7 +25,7 @@ $i = 0;
 sort($print);
 while ($i < count($print))
 {
-	echo "$print[$i]\n";
+	echo $print[$i] . "\n";
 	$i++;
 }
 ?>
