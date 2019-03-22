@@ -13,6 +13,7 @@ function	ft_check_input($input)
 {
 	$i = 0;
 	$part = 1;
+	$operator = 0;
 	while ($i < strlen($input))
 	{
 		if (($part == 1 || $part == 3) && !is_numeric($input[$i]))
@@ -45,6 +46,7 @@ $input = str_replace("\t", '', $input);
 if (!ft_check_input($input))
 	return (ft_error(2));
 $first = intval($input);
+$i = 0;
 while (is_numeric($input[$i]))
 	$i++;
 $second[0] = $input[$i];
