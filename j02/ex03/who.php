@@ -1,5 +1,5 @@
 #!/usr/bin/php
-<?
+<?PHP
 $template = "A256user/A4id/A32ttyname/ipid/itype/lloginsec/A256host/A64pad";
 $input = file_get_contents("/var/run/utmpx"); 
 while ($input != "")
