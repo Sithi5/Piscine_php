@@ -1,6 +1,5 @@
 #!/usr/bin/php
 <?PHP
-
 function	ft_error($error)
 {
 	if ($error == 1)

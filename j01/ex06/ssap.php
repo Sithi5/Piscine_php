@@ -1,5 +1,5 @@
 #!/usr/bin/php
-<?php
+<?PHP
 function	ft_split($text)
 {
 	$text = explode(' ', $text);

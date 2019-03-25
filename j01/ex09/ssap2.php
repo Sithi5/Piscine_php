@@ -1,6 +1,5 @@
 #!/usr/bin/php
-<?php
-
+<?PHP
 function	ft_cmp($s1, $s2)
 {
 	$s1 = strtolower($s1);

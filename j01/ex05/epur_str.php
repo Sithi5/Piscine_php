@@ -1,5 +1,5 @@
 #!/usr/bin/php
-<?php
+<?PHP
 if ($argc != 2)
 	return ;
 $i = 0;

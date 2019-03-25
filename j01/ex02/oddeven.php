@@ -1,5 +1,5 @@
 #!/usr/bin/php
-<?php
+<?PHP
 $input = "";
 echo "Entrez un nombre: ";
 while (fscanf(STDIN, "%s\n", $input))

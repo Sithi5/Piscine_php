@@ -1,6 +1,5 @@
 #!/usr/bin/php
 <?PHP
-
 if ($argc < 3)
 {
 	return ;
