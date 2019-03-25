@@ -1,6 +1,6 @@
 #!/usr/bin/php
 <?php
-$input = 1;
+$input = "";
 echo "Entrez un nombre: ";
 while (fscanf(STDIN, "%s\n", $input))
 {
@@ -15,6 +15,7 @@ while (fscanf(STDIN, "%s\n", $input))
 	else
 		echo "Le chiffre " . $input . " est Impair" . "\n";
 	echo "Entrez un nombre: ";
+	$input = "";
 }
 	echo "^D" . "\n";
 ?>
