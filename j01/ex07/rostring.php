@@ -7,7 +7,7 @@ function	ft_split($text)
 	return ($result);
 }
 
-if ($argc < 2)
+if ($argc < 2 || !$argv[1])
 return ;
 $result = array();
 $tmp = trim(preg_replace('/ +/', ' ', $argv[1]));
