@@ -37,7 +37,15 @@ body nav > ul > li > a
 
 body nav ul li a:hover
 {
+    background-color: orangered;
+}
+body nav ul li ul li:hover
+{
     background-color: grey;
+}
+body nav ul li ul li a:hover
+{
+    background-color: orangered;
 }
 
 ul ul, ul ul ul
@@ -56,7 +64,7 @@ body nav ul li ul li ul.first
     width: 20vw;
     height: 4vh;
     margin-left: 20vw;
-    margin-top: -10%;
+    margin-top: -12%;
     text-align: center;
     line-height: 4vh;
 }
