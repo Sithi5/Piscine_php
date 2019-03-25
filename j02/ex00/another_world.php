@@ -4,5 +4,6 @@ if ($argc < 2)
 {
 	return ;
 }
-echo preg_replace('/ +/',' ', preg_replace('[\t]', ' ', $argv[1])) . "\n";
+echo preg_replace('/ +/',' ',
+	preg_replace('[\t]', ' ', trim($argv[1], " \t"))) . "\n";
 ?>
