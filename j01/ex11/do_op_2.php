@@ -31,7 +31,7 @@ function	ft_check_input($input)
 			$part = 4;
 		else if (!is_numeric($input[$i]) && $input[$i] != '-'
 			&& $input[$i] != '/' && $input[$i] != '+' && $input[$i] != '*'
-			&& $input[$i] != '%')
+			&& $input[$i] != '%' && $part == 2)
 				return (0);
 		else if ($input[$i] == '-' || $input[$i] == '/' || $input[$i] == '+'
 				|| $input[$i] == '*' || $input[$i] == '%')
@@ -53,7 +53,10 @@ $input = str_replace("\t", '', $input);
 if (!ft_check_input($input))
 	return (ft_error(2));
 $first = intval($input);
-$i = 0;
+if ($input[0] == '-' || $input[0] == '+')
+	$i = 1;
+else
+	$i = 0;
 while (is_numeric($input[$i]))
 	$i++;
 $second[0] = $input[$i];
