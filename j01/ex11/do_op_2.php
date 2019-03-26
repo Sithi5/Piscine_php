@@ -13,12 +13,20 @@ function	ft_check_input($input)
 	$i = 0;
 	$part = 1;
 	$operator = 0;
+	$sign = 0;
 	while ($i < strlen($input))
 	{
 		if (($part == 1 || $part == 3) && !is_numeric($input[$i]))
-			return (0);
+		{
+			if (($input[$i] != '-' && $input[$i] != '+') || $sign == 1)
+				return (0);
+			$sign = 1;
+		}
 		else if (($part == 1) && is_numeric($input[$i]))
+		{
+			$sign = 0;
 			$part = 2;
+		}
 		else if (($part == 3) && is_numeric($input[$i]))
 			$part = 4;
 		else if (!is_numeric($input[$i]) && $input[$i] != '-'
