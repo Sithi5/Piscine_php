@@ -66,7 +66,7 @@ if (file_exists($file))
 			{
 				$color2 = $color; 
 				if ($message['login'] !== "Console")
-					echo date("[h:i]", $message['time']) . " ";
+					echo "<small>" . date("d/m/y h:i", $message['time']) . "</small> ";
 				else
 					$color2 = "red";
 				if ($setcolor == 1)
@@ -75,7 +75,6 @@ if (file_exists($file))
 				echo $message['msg'] . "<br />";
 				if ($setcolor == 1)
 					echo "</span>";
-				echo "\n";
 			}
 		}
 		flock($fd, LOCK_UN);

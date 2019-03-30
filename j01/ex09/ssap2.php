@@ -5,9 +5,11 @@ function	ft_cmp($s1, $s2)
 	$s1 = strtolower($s1);
 	$s2 = strtolower($s2);
 	$i = 0;
-	while ($s1[$i])
+	for($i = 0; $s1[$i] == $s2[$i]; $i++)
+		;
+	while ($s1[$i] || is_numeric($s1[$i]))
 	{
-		if ($s1[$i] != $s2[$i])
+		if (($s2[$i] || is_numeric($s2[$i])) && $s1[$i] != $s2[$i])
 		{
 			if (Ctype_alpha($s1[$i]) && Ctype_alpha($s2[$i]))
 				return (strcmp($s1[$i], $s2[$i]));
@@ -24,9 +26,13 @@ function	ft_cmp($s1, $s2)
 			else
 				return (strcmp($s1[$i], $s2[$i]));
 		}
+		else if (!is_numeric($s2[$i]))
+			return (strcmp($s1[$i], $s2[$i]));
+		else
+			return (strlen($s1) - strlen($s2));
 		$i++;
 	}
-	return ($s1[$i] - $s2[$i]);
+	return (strlen($s1) - strlen($s2));
 }
 
 if ($argc < 2)

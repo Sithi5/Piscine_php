@@ -2,42 +2,36 @@
 
 session_start();
 $file = "../private/chat";
-if ($_SESSION["loggued_on_user"] != "")
+if ($_POST && $_POST['msg'] && $_POST['submit'] == "OK"
+	&& $_SESSION["loggued_on_user"] != "")
 {
-	if ($_POST && $_POST['msg'] && $_POST['submit'] == "OK")
+	$login = $_SESSION["loggued_on_user"];
+	$message = $_POST["msg"];
+	$time = time();
+	if (file_exists($file))
 	{
-		$login = $_SESSION["loggued_on_user"];
-		$message = $_POST["msg"];
-		$time = time();
-		if (file_exists($file))
-		{
-			$messagedb = unserialize(file_get_contents($file));
-		}
-		else
-		{
-			file_put_contents("$file", "");
-		}
-		$new_message["login"] = $login;
-		$new_message["time"] = $time;
-		$new_message["msg"] = $message;
-		if ($new_message["msg"] === "/joke")
-		{
-			$new_message['login'] = "Console";
-			$new_message['msg'] = ft_joke();
-		}
-		$messagedb[] = $new_message;
-		$fd = fopen($file, "w");
-		if (flock($fd, LOCK_EX))
-		{
-			file_put_contents($file, serialize($messagedb));
-			flock($fd, LOCK_UN);
-		}
-		fclose($fd);
+		$messagedb = unserialize(file_get_contents($file));
 	}
-}
-else
-{
-	exit("ERROR\n");
+	else
+	{
+		file_put_contents("$file", "");
+	}
+	$new_message["login"] = $login;
+	$new_message["time"] = $time;
+	$new_message["msg"] = $message;
+	if ($new_message["msg"] === "/joke")
+	{
+		$new_message['login'] = "Console";
+		$new_message['msg'] = ft_joke();
+	}
+	$messagedb[] = $new_message;
+	$fd = fopen($file, "w");
+	if (flock($fd, LOCK_EX))
+	{
+		file_put_contents($file, serialize($messagedb));
+		flock($fd, LOCK_UN);
+	}
+	fclose($fd);
 }
 
 function	ft_joke()
